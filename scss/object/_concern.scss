@@ -1,0 +1,84 @@
+/*--- concern ---*/
+.concern_contents {
+  display: flex;
+  flex-direction: column;
+  background-color: #fdfcfc;
+  .inner {
+    margin-top: 110px;
+    .concern_title {
+      position: relative;
+    }
+    .title {
+      display: none;
+      //top: 1rem;
+      //left: 26rem;
+      //font-size: 15px;
+      //margin-left: 420px;
+      //margin-top: 50px;
+      //line-height: 67px;
+      margin-top: 10px;
+      @include overTab {
+        display: block;
+        position: absolute;
+        font-family: "Yu Mincho", "YuMincho";
+        font-weight: 400;
+        font-size: 45px;
+        line-height: 67px;
+        letter-spacing: 0.2em;
+        margin-left: 25%;
+        margin-top: 3%;
+      }
+    }
+    .title_img {
+      display: none;
+      @include overTab {
+        display: block;
+      }
+    }
+    .title_img_sp {
+      display: block;
+      width: 100%;
+      @include overTab {
+        display: none;
+      }
+    }
+    .detail {
+      display: none;
+      @include overTab {
+        display: block;
+      }
+    }
+    .sugest {
+      font-size: 20px;
+      color: #98989a;
+      text-align: center;
+      margin-top: 55px;
+      @include overTab {
+        font-size: 55px;
+        font-weight: bold;
+        margin-top: 156px;
+        margin-bottom: 300px;
+        line-height: 80px;
+        letter-spacing: 0.1em;
+      }
+      .bule {
+        font-size: 28px;
+        color: cl(primary_pale);
+        background: rgba(0, 0, 0, 0)
+          linear-gradient(transparent 80%, #ffffbc 0%) repeat scroll 0 0;
+        @include overTab {
+          font-size: 70px;
+        }
+      }
+      .red {
+        font-size: 28px;
+        color: #ec99b0;
+        background: rgba(0, 0, 0, 0)
+          linear-gradient(transparent 80%, #ffffbc 0%) repeat scroll 0 0;
+        @include overTab {
+          font-size: 70px;
+        }
+      }
+    }
+  }
+}

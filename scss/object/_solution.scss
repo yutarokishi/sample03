@@ -1,0 +1,105 @@
+/*--- solution ---*/
+.solution {
+  position: relative;
+  .solution_cont {
+  }
+  .solution_title {
+    display: none;
+    @include overTab {
+      display: block;
+    position: absolute;
+    font-size: 45px;
+    font-family: "Yu Mincho", "YuMincho";
+    top: 12rem;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    border-bottom: 3px solid #9f9a9b;
+    padding-bottom: 33px;
+    margin-top: 20px;
+  }
+  }
+  .solution_text {
+    display: none;
+    @include overTab {
+    display: block;
+    position: absolute;
+    font-size: 20px;
+    line-height: 2em;
+    text-align: center;
+    letter-spacing: 0.1em;
+    top: 23rem;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin: 0;
+    //padding: 0;
+    margin-top: 30px;
+  }
+  }
+  .contact_button {
+    position: absolute;
+    top: 16rem;
+    left: 63%;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin: 0;
+    //padding: 0;
+    padding-top: 60px;
+    width: 400px;
+    height: 100px;
+    @include overTab {
+    position: absolute;
+    top: 35rem;
+    left: 43%;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin: 0;
+    //padding: 0;
+    padding-top: 60px;
+    width: 400px;
+    height: 100px;
+  }
+  }
+  .flame {
+    display: none;
+    @include overTab {
+      display: block;
+    }
+  }
+  .flame_sp {
+    display: block;
+    @include overTab {
+      display: none;
+    }
+  }
+  .solution1 {
+    display: none;
+    @include overTab {
+      display: block;
+      position: absolute;
+    max-width: 180px;
+    max-height: 180px;
+    top: 20rem;
+    left: 15rem;
+    transform: rotate(-10.08deg);
+    }
+  }
+  .solution2 {
+    display: none;
+    @include overTab {
+    display: block;
+    position: absolute;
+    max-width: 180px;
+    max-height: 180px;
+    top: 29rem;
+    left: 65rem;
+  }
+  }
+}

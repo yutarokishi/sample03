@@ -1,0 +1,68 @@
+/*--- review ----*/
+.review {
+  .reviwe_wrap {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Yu Mincho", "YuMincho";
+    font-size: 45px;
+    line-height: 67px;
+    letter-spacing: 0.05em;
+    color: #333333;
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-top: 190px;
+  }
+  .review_cont {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 128px;
+    .review_list {
+      position: relative;
+
+      .teview_img {
+        position: relative;
+      }
+      .text {
+        text-align: left;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-top: 240px;
+        margin-left: 70px;
+      }
+    }
+    .review_list_02 {
+      position: relative;
+
+      .teview_img {
+        position: relative;
+      }
+      .text {
+        text-align: left;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-top: 226px;
+        margin-left: 85px;
+      }
+    }
+    .review_list_03 {
+      position: relative;
+
+      .teview_img {
+        position: relative;
+      }
+      .text {
+        text-align: left;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-top: 235px;
+        margin-left: 102px;
+      }
+    }
+  }
+}

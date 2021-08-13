@@ -1,0 +1,215 @@
+/*--- 1st View ----*/
+.header {
+  background-image: url(../image/top_img_sp.png);
+  background-size: cover;
+  background-position: center;
+  @include overTab {
+    background-image: url(../image/top_img.png);
+    height: 870px;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.2);
+    background-blend-mode: darken;
+  }
+
+  .header_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .title_inner {
+      @include overTab {
+        display: inline-block;
+        position: relative;
+        width: 514px;
+        height: 710px;
+        left: 117px;
+        top: 0px;
+        margin: 0;
+        text-align: center;
+        color: white;
+        background: linear-gradient(0.59deg, #e6ceb2 -23.37%, #efb090 99.45%);
+      }
+
+      &:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 100%;
+        height: 0;
+        width: 0;
+        border-left: 257px solid #e7c8ab;
+        border-right: 257px solid #e7c8ab;
+        border-bottom: 90px solid transparent;
+        border-top: none;
+      }
+      .title {
+        font-family: "Yu Mincho", "YuMincho";
+        display: inline-block;
+        border-top: 2px solid rgba(255, 255, 255, 0.6);
+        border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+        margin-top: 105px;
+        padding: 8px;
+        font-weight: 800;
+        font-size: 50px;
+        line-height: 75px;
+        text-align: center;
+        letter-spacing: 0.25em;
+      }
+      .disc_01 {
+        margin-top: 50px;
+        margin-left: 75px;
+        font-weight: 300;
+        font-size: 35px;
+        line-height: 41px;
+        text-align: left;
+        letter-spacing: 0.1em;
+      }
+      .disc_02 {
+        margin-top: 35px;
+        margin-left: 75px;
+        font-weight: bold;
+        font-size: 50px;
+        line-height: 59px;
+        letter-spacing: 0.2em;
+        color: #ffffff;
+        text-align: left;
+      }
+      .disc_03 {
+        margin-top: 35px;
+        margin-left: 75px;
+        text-align: left;
+        font-weight: 300;
+        font-size: 35px;
+        line-height: 41px;
+        letter-spacing: 0.1em;
+      }
+    }
+    .line_inner {
+      .concle_inner {
+        font-weight: bold;
+        color: #ffffff;
+        letter-spacing: 0.1em;
+        margin-top: 163px;
+        .concel_title {
+          font-weight: bold;
+          font-size: 40px;
+          line-height: 47px;
+          color: #ffffff;
+          margin-right: 110px;
+          span {
+            border-top: solid 3px #fff;
+            border-bottom: solid 3px #fff;
+            border-left: solid 2px #fff;
+            border-right: solid 1px #fff;
+            padding: 8px;
+            &:nth-child(1) {
+              border-left: 3px solid #fff;
+            }
+            &:nth-child(9) {
+              border-right: 3px solid #fff;
+            }
+          }
+        }
+        .concel_disc {
+          margin-top: 97px;
+          font-weight: bold;
+          font-size: 20px;
+          line-height: 30px;
+          text-align: center;
+          letter-spacing: 0.1em;
+          color: #ffffff;
+          width: 450px;
+          height: 122px;
+          margin-left: 55px;
+        }
+        .line {
+          font-weight: normal;
+          font-weight: 500;
+          font-size: 30px;
+          line-height: 35px;
+          letter-spacing: 0.1em;
+          margin-top: 83px;
+          &::before {
+            content: "";
+            display: inline-block;
+            width: 21px;
+            height: 25px;
+            transform: rotate(150deg);
+            border-left: 3px solid cl(white);
+            position: relative;
+            top: 20px;
+            margin-bottom: 1rem;
+            margin-right: 0.5rem;
+          }
+          &::after {
+            content: "";
+            display: inline-block;
+            width: 21px;
+            height: 25px;
+            transform: rotate(-150deg);
+            border-left: 3px solid cl(white);
+            position: relative;
+            top: 16px;
+            margin-bottom: 1rem;
+            margin-right: 10px;
+          }
+
+          color: #ffffff;
+        }
+      }
+      .line_wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+      }
+      .line_cont {
+        margin-top: 15px;
+        background-color: rgba(255, 255, 255, 0.9);
+        height: 205px;
+        .title {
+          font-family: Hiragino Kaku Gothic Pro;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 23px;
+          line-height: 34px;
+          color: #000000;
+          margin-top: 25px;
+          margin-left: 40px;
+          margin-right: 28px;
+        }
+        .line_disc {
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 16px;
+          text-align: center;
+          margin-top: 15px;
+
+          color: #161616;
+        }
+        .contact_btn {
+          position: absolute;
+          top: 33rem;
+          left: 5%;
+          font-size: 17px;
+          line-height: 20px;
+          text-align: center;
+          letter-spacing: 0.1em;
+          color: rgba(255, 255, 255, 0.9);
+          @include overTab {
+            top: 43.5rem;
+            left: 50.5rem;
+          }
+        }
+      }
+      .line_info {
+        text-align: center;
+        background-color: #e6ceb2;
+        margin-top: 15px;
+        padding-right: 25px;
+        padding-left: 25px;
+        .diamond {
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}

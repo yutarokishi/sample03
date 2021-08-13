@@ -1,0 +1,46 @@
+/*---- purchase ---*/
+.purchase {
+  background-color: #fff;
+  .purchase_title {
+    text-align: center;
+    .title_main {
+      font-weight: 600;
+      font-style: normal;
+      font-size: 45px;
+      line-height: 67px;
+      letter-spacing: 0.1em;
+      font-family: "Yu Mincho", "YuMincho";
+      margin-top: 100px;
+      background-color: #fff;
+    }
+    .title_sub {
+      margin-top: 45px;
+      font-size: 20px;
+      line-height: 23px;
+      text-align: center;
+      letter-spacing: 0.1em;
+    }
+  }
+  .purchase_cont {
+    font-family: "Yu Mincho", "YuMincho";
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    margin-bottom: 200px;
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+  .purchase_product {
+    width: calc(100% / 4);
+    box-sizing: border-box;
+    margin-top: 50px;
+    text-align: center;
+    p {
+      font-size: 17px;
+    }
+    .sub {
+      font-size: 12px;
+      margin-left: 12px;
+    }
+  }
+}

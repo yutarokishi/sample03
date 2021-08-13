@@ -1,0 +1,116 @@
+/*---- contact -----*/
+.contact {
+  .contact_title {
+    .title {
+      position: relative;
+      text-align: center;
+      background: linear-gradient(90deg, #efb090 0%, #f09379 100%);
+      padding: 1em;
+      font-size: 55px;
+      font-weight: bold;
+      line-height: 64px;
+      text-align: center;
+      letter-spacing: 0.1em;
+      color: #ffffff;
+
+      &:after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: -40px;
+        left: 0;
+        width: 0px;
+        height: 0px;
+        margin: auto;
+        border-style: solid;
+        border-color: #f0a285 transparent transparent transparent;
+        border-width: 100px 100px 0px 100px;
+      }
+    }
+    .sub {
+      font-size: 17px;
+      line-height: 25px;
+      text-align: center;
+      margin-top: 100px;
+
+      color: #000000;
+    }
+  }
+  .contact_img {
+    text-align: center;
+    margin-top: 80px;
+  }
+
+  .contact_label {
+    margin-left: 230px;
+    margin-bottom: 50px;
+    label {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    label:not(:last-child) {
+      margin-bottom: 30px;
+    }
+
+    .title {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      align-self: flex-start;
+      padding-top: 13px;
+      width: 240px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .required {
+      padding: 10px;
+      color: #fff;
+      line-height: 1;
+      background-color: #e06262;
+      border-radius: 6px;
+      font-size: 10px;
+      margin-left: 20px;
+    }
+
+    input[type="text"],
+    textarea {
+      display: block;
+      padding: 20px;
+      width: calc(100% - 200px - 30px);
+      background-color: #f6f6f6;
+      border-color: #f6f6f6;
+      border: solid 0px;
+    }
+
+    textarea {
+      height: 300px;
+    }
+  }
+  .submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 340px;
+    height: 50px;
+    margin: 0 auto;
+    //position: relative;
+    background: #c4c4c4;
+    border: 1px solid #c4c4c4;
+    border-radius: 30px;
+    box-sizing: border-box;
+    padding: 0 45px 0 25px;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 0.1em;
+    line-height: 1.3;
+    text-decoration: none;
+  }
+  .submit:hover {
+    background: linear-gradient(#e2775c);
+    opacity: 0.7;
+  }
+}

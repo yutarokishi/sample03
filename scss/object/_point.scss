@@ -1,0 +1,97 @@
+/*--- perchace_point ---*/
+.perchace_point {
+  .perchace_wrap {
+    .perchace_title {
+      text-align: center;
+      margin-top: 140px;
+      .main {
+        font-family: "Yu Mincho", "YuMincho";
+        font-size: 45px;
+        line-height: 67px;
+        //text-align: center;
+        position: relative;
+        padding-bottom: 25px;
+        &:before {
+          content: "";
+          position: absolute;
+          left: 50%;
+          bottom: 0px;
+          display: inline-block;
+          width: 200px;
+          height: 3px;
+          -moz-transform: translateX(-50%);
+          -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+          transform: translate(-50%);
+          background-color: #9f9a9b;
+        }
+      }
+      .sub {
+        text-align: center;
+        margin-top: 100px;
+        font-size: 20px;
+        line-height: 33px;
+        letter-spacing: 0.1em;
+      }
+    }
+    .point_list {
+      margin: 0 auto;
+      margin-top: 80px;
+      padding-top: 40px;
+      padding-bottom: 40px;
+      padding-left: 100px;
+      padding-right: 100px;
+      color: cl(black);
+      background: #fffdfa;
+      width: 800px;
+      .point_item {
+        display: flex;
+        margin-left: 100px;
+        padding-top: 10px;
+        .check {
+          margin-right: 25px;
+        }
+        .disc {
+          font-size: 25px;
+          line-height: 29px;
+          color: #71726f;
+          padding-top: 10px;
+          padding-bottom: 10px;
+        }
+      }
+    }
+    .point_ng {
+      .ng_wrap {
+        display: flex;
+        .img {
+          margin-top: 66px;
+          margin-left: 180px;
+        }
+      }
+      .ng_title {
+        display: flex;
+        flex-direction: column;
+
+        .title {
+          font-size: 35px;
+          font-weight: bold;
+          line-height: 41px;
+          letter-spacing: 0.1em;
+          color: #efb090;
+          margin-top: 115px;
+        }
+        .disc {
+          margin-top: 50px;
+          width: 547px;
+          height: 188px;
+          left: 654px;
+          top: 8330px;
+          font-size: 20px;
+          line-height: 35px;
+          letter-spacing: 0.1em;
+          color: #333333;
+        }
+      }
+    }
+  }
+}

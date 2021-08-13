@@ -1,0 +1,99 @@
+/*-- faq */
+.faq {
+  background-color: #ebf7f7;
+  height: 1100px;
+  .wrapper {
+  }
+  .faq_wrap {
+    .faq_title {
+      text-align: center;
+      margin-top: 140px;
+      background-color: #fff;
+
+      .title {
+        position: relative;
+        font-family: "Yu Mincho", "YuMincho";
+        font-size: 45px;
+        //border-bottom: 3px solid #9f9a9b;
+        margin: 0 auto;
+        padding-top: 50px;
+        padding-bottom: 0px;
+        height: 80px;
+        width: 400px;
+        border-radius: 180px 180px 0 0;
+        background-color: #ebf7f7;
+        &:before {
+          content: "";
+          position: absolute;
+          left: 50%;
+          bottom: 0px;
+          display: inline-block;
+          width: 160px;
+          height: 3px;
+          -moz-transform: translateX(-50%);
+          -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+          transform: translate(-50%);
+          background-color: #9f9a9b;
+        }
+      }
+    }
+  }
+  .faq_cont {
+    margin-top: 130px;
+  }
+  .faq_list {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .faq_item {
+    font-size: 16px;
+    margin-top: 55px;
+    > a {
+      background-color: #81d8d0;
+      border: 1px solid #000;
+      display: block;
+      color: cl(black);
+      //padding-top: 20px;
+      padding-bottom: 20px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 23px;
+      letter-spacing: 0.05em;
+      color: #000000;
+      .question {
+        font-size: 45px;
+        line-height: 53px;
+        color: #63909e;
+        padding-right: 32px;
+        padding-left: 32px;
+      }
+    }
+    .detail {
+      font-weight: lighter;
+      display: flex;
+      color: cl(black);
+      background-color: #fff;
+      text-align: left;
+      border: 1px solid #000;
+      font-size: 20px;
+      line-height: 30px;
+      letter-spacing: 0.1em;
+      color: #000000;
+      padding-left: 32px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      //display: none;
+
+      .answer {
+        font-weight: bold;
+        font-size: 45px;
+        color: #63909e;
+        padding-right: 32px;
+        letter-spacing: 0.2em;
+      }
+    }
+  }
+}
